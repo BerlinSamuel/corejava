@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Input Elements</title>
+</head>
+<body>
+	<div>
+		<label for='year'> Years of Experience: <input name='year'
+			id='year' type='number' step='0.05' min='5' max='50' max='35'>
+		</label>
+	</div>
+	<div>
+		<label for='age'> Age Range <input name='age' id='age'
+			type='range' step='1' min='22' max='30' max='23'></label>
+	</div>
+	<div>
+		<label for='phone'> Phone Number: <input name='phone'
+			id='phone' type='tel' required pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+			placeholder='123-456-6789'>
+		</label>
+	</div>
+	<input name='course' id='course' type='checkbox' checked=true required>
+	<input name='course' id='course' type='checkbox' required
+		value='english'>
+	<input name='course' id='course' type='checkbox' required value='tamil'>
+	</div>
+	<div>
+		<label for='secret'> Hidden Content: <input type='hidden'
+			name='secret' value='password'>
+		</label>
+	</div>
+	<div>
+		Url: <input type='url' name='url' value='www.google.com'> </label>
+	</div>
+	<div>
+		<label for='listoffruits'> <select nam='listoffruits'
+			title='Select a fruit'>
+				<option>APPLE</option>
+				<option>ORANGE</option>
+				<option>GRAPES</option>
+				<optgroup label="BANANAS">
+					<option>Red banana</option>
+					<option>Green banana</option>
+					<option>Yellow banana</option>
+				</optgroup>
+		</select></label>
+	</div>
+	<label for='comments'>
+	<textarea name= 'comments' cols="50" rows="5">
+	</textarea>
+	</label><div>
+	<input type='submit' value='click me!'>
+	<input type='submit' value='reset'>
+	<input type='image' alt='close' name='close' src='../images/close.jpg' width=25 height=25>
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM_A</title>
+<style>
+.green {
+	background-color: red;
+}
+
+li.yellow {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<div id="div1" class="green">Hello JavaScript</div>
+	<div>
+		<h1>Fruits</h1>
+		<ul>
+			<li class="yellow">Apple</li>
+			<li>Orange</li>
+			<li class="yellow">Mango</li>
+			<li>Grapes</li>
+		</ul>
+		<img alt="tiger" src="../images/tiger.jpg" width=200 height=200>
+		<div id="div2" class="yellow">
+			<input type="text" name="fname" id="fname" value="Samuel"
+				placeholder="Enter first name">
+		</div>
+	</div>
+
+	<!-- <script> 
+    console.log("hello world");
+    console.dir(document);
+    console.log(document.URL);
+    console.dir(document.children[0]); // html
+    console.dir(document.children[0].children[1]); // body
+    console.dir(document.children[0].children[1].childNodes);</script>
+    -->
+
+
+	<!-- <script>
+    var x= 234;
+    console.log(x);
+    var cities={'capital':'chennai', 'native':'madurai', 'permanent': 'trichy', 'favourite':'salem'};
+    console.log(cities);
+    </script> -->
+	<!-- 
+    To Edit Console in Browser:
+    var e1 =document.getElementById("fname");
+undefined
+e1.value="Realme"
+'Realme'
+var e2 = document.getElementsByTagName("img");
+undefined
+e2[0].src="images/html_logo.png";
+'images/html_logo.png' -->
+	<script>
+		var divElement = document.getElementById("div1")
+		//divElement.innerHTML=" Hello London";
+		divElement.innerText = "Hello London";
+		var textElement = document.getElementById("fname");
+		console.log(textElement.value);
+		var listItems = document.getElementsByTagName("li");
+		var itemLength = listItems.length;
+		for (var i = 0; i < itemLength; i++) {
+			console.log(listItems[i].innerText)
+		}
+		listItems[0].innerText = "Samsung";
+		listItems[1].innerText = "Onida";
+		listItems[2].innerText = "Philips";
+		listItems[3].innerText = "Sony";
+	</script>
+</body>
+</html>

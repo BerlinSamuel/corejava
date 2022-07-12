@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GlobalState</title>
+</head>
+<body>
+<div>
+    <input type=text name='commission' id='commission' value ="5"/>
+    <!-- salary and submit are example for visible values in the browser -->
+    </div>
+<form action="/firstWebsite/GlobalState?department=id&city=madurai" method ="post">
+<!-- ?department=id&city=madurai is example for query string -->
+<div>
+    <div>
+    <label for='salary' >Salary:</label>
+    <input type=text name='salary' id='salary' value ="20000"/>
+    <!-- salary and submit are example for visible values in the browser -->
+    </div>
+    <div style ="width:50% ;margin: 0 auto">
+        <input type ="hidden" value ="50000" name ="bonus" id ="bonus">
+        <!-- visible to browser and cannot visible to nacked eye -->
+    </div>
+    <div style ="width:50% ;margin: 0 auto">
+        <input type ="submit" value ="set" name ="submit">
+    </div>
+    <div style ="width:50% ;margin: 0 auto">
+        <input type ="submit" value ="fetch" name ="submit"> 
+        <!--input are called as elements or controls which is used to store data in the client side and it is visible in the browser-->
+    </div>
+    </div>
+</form>    
+</body>
+</html>
